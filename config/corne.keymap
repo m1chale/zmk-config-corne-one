@@ -32,7 +32,7 @@
 //                    | SYM | BCK | NAV |   | ENT | SPC  | NUM |
                         bindings = <
    &kp ESC   &kp Q    &kp W    &kp E       &kp R        &kp T           &kp Z   &kp U       &kp I       &kp O      &kp P            &kp LS(U)
-   &none &none &none &none &none &hm LC F                               &none &none &none &none &none &none
+   &none &none &none &none &none &hm LCTRL F                               &none &none &none &none &none &none
    &none     &kp Y    &kp X    &kp C       &kp V        &kp B           &kp N   &kp M       &kp COMMA   &kp DOT    &kp MINUS        &kp DEL
                                &none       &none        &none           &none &none   &none
                         >;
