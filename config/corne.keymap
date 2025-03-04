@@ -11,7 +11,7 @@
 #define BASE_LAYER 0
 #define SYM_LAYER 1
 #define NAV_LAYER 2
-#define NUM_LAYER 2
+#define NUM_LAYER 3
 
 / {
         behaviors {
@@ -54,8 +54,7 @@
    &kp CARET   &kp LG(E)  &kp HASH    &kp LBKT    &kp RBKT   &kp EXCL       &kp QMARK   &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp STAR  &kp FSLH    &kp BSLH
    &none       &none      &kp GRAVE   &kp SQT     &kp EQUAL  &kp AMPS       &kp DQT     &kp LPAR         &kp RPAR          &kp PLUS  &kp PIPE    &none
    &kp LS(3)   &kp DOLLAR &kp LT      &kp GT      &none      &kp PRCNT      &kp AT      &none            &kp SEMI          &kp COLON &kp UNDER   &kp TILDE
-   &none       &kp DOLLAR &kp LT      &kp GT      &none      &kp PRCNT      &kp AT      &none            &kp SEMI          &kp COLON &kp UNDER   &kp TILDE
-                                     &trans      &trans     &none          &trans      &trans           &none
+                                      &trans      &trans     &none          &trans      &trans           &none
                         >;
                 };
 
