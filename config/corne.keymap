@@ -51,7 +51,8 @@
 // |   §  |  $  |  <  |  >  |     |  %  |   |  @  |     |  ;  |  :  |  _  |   ~  |
 //                    | SYM | BCK |     |   | ENT | SPC |     |
                         bindings = <
-   &kp CARET  &text "€"  &kp HASH    &kp LBKT    &kp RBKT   &kp EXCL       &kp QMARK   &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp STAR  &kp FSLH    &kp BSLH
+   //&kp CARET  &text "€"  &kp HASH    &kp LBKT    &kp RBKT   &kp EXCL       &kp QMARK   &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp STAR  &kp FSLH    &kp BSLH
+   &none &none &none &none &none &none &none &none &none &none &none &none
    &none      &none      &kp GRAVE   &kp SQT     &kp EQUAL  &kp AMPS       &kp DQT     &kp LPAR         &kp RPAR          &kp PLUS  &kp PIPE    &none
    &text "§"  &kp dollar &kp LT      &kp GT      &none      &kp PRCNT      &kp AT      &none            &kp SEMI          &kp COLON &kp UNDER   &kp TILDE
                                      &trans      &trans     &none          &trans      &trans           &none
