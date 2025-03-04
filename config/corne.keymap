@@ -38,25 +38,25 @@
 // |      |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  | DEL |
 //                    | SYM | BCK | NAV |   | ENT | SPC  | NUM |
                         bindings = <
-   &kp ESC   &kp Q      &kp W      &kp E          &kp R        &kp T           &kp Z   &kp U       &kp I           &kp O        &kp P                &kp DE_U_UMLAUT
-   &kp TAB   &hm LGUI A &hm LALT S &hm LSHIFT D   &hm LCTRL F  &kp G           &kp H   &hm LCTRL J &hm LSHIFT K    &hm LALT L   &hm LGUI DE_O_UMLAUT &kp DE_A_UMLAUT
-   &none     &kp Y      &kp X      &kp C          &kp V        &kp B           &kp N   &kp M       &kp COMMA       &kp DOT      &kp MINUS            &kp DEL
-                                   &mo SYM_LAYER  &kp BSPC     &mo NAV_LAYER   &kp RET &kp SPACE   &mo NUM_LAYER
+   &kp ESC   &kp DE_Q        &kp DE_W        &kp DE_E          &kp DE_R         &kp DE_T             &kp DE_Z   &kp DE_U         &kp DE_I          &kp DE_O        &kp DE_P               &kp DE_U_UMLAUT
+   &kp TAB   &hm LGUI DE_A   &hm LALT DE_S   &hm LSHIFT DE_D   &hm LCTRL DE_F   &kp DE_G             &kp DE_H   &hm LCTRL DE_J   &hm LSHIFT DE_K   &hm LALT DE_L   &hm LGUI DE_O_UMLAUT   &kp DE_A_UMLAUT
+   &none     &kp DE_Y        &kp DE_X        &kp DE_C          &kp DE_V         &kp DE_B             &kp DE_N   &kp DE_M         &kp DE_COMMA      &kp DE_DOT      &kp DE_MINUS           &kp DEL
+                                             &mo SYM_LAYER     &kp BSPC         &mo NAV_LAYER        &kp RET    &kp SPACE        &mo NUM_LAYER
                         >;
                 };
 
 
                 sym {
 // -------------------------------------------------------------------------------
-// |   ^  |  €  |  #  |  [  |  ]  |  !  |   |  ?  |  {  |  }  |  *  |  /  |   \  |
-// |      |     |  `  |  '  |  =  |  &  |   |  "  |  (  |  )  |  +  | "|" |      |
-// |   §  |  $  |  <  |  >  |     |  %  |   |  @  |     |  ;  |  :  |  _  |   ~  |
+// |   ß  |  €  |  #  |  [  |  ]  |  !  |   |  ?  |  {  |  }  |  *  |  /  |   \  |
+// |   ^  |  $  |  `  |  '  |  =  |  &  |   |  "  |  (  |  )  |  +  | "|" |      |
+// |   °  |  §  |  <  |  >  |     |  %  |   |  @  |     |  ;  |  :  |  _  |   ~  |
 //                    | SYM | BCK |     |   | ENT | SPC |     |
                         bindings = <
-   &kp CARET    &kp DE_EURO  &kp HASH    &kp LBKT    &kp RBKT   &kp EXCL       &kp QMARK   &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp STAR  &kp FSLH    &kp BSLH
-   &none        &none        &kp GRAVE   &kp SQT     &kp EQUAL  &kp AMPS       &kp DE_DQT  &kp LPAR         &kp RPAR          &kp PLUS  &kp PIPE    &none
-   &kp DE_SECT  &kp DOLLAR   &kp LT      &kp GT      &none      &kp PRCNT      &kp AT      &none            &kp SEMI          &kp COLON &kp UNDER   &kp TILDE
-                                         &trans      &trans     &none          &trans      &trans           &none
+   &kp DE_SHARPü_S   &kp DE_EURO     &kp DE_HASH    &kp DE_LBKT   &kp DE_RBKT    &kp DE_EXCL         &kp DE_QMARK   &kp DE_LEFT_BRACE   &kp DE_RIGHT_BRACE   &kp DE_STAR    &kp DE_FSLH    &kp DE_BSLH
+   &kp DE_CARET      &kp DE_DOLLAR   &kp DE_GRAVE   &kp DE_SQT    &kp DE_EQUAL   &kp DE_AMPS         &kp DE_DQT     &kp DE_LPAR         &kp DE_RPAR          &kp DE_PLUS    &kp DE_PIPE    &none
+   &kp DE_DEG        &kp DE_SECT     &kp DE_LT      &kp DE_GT     &none          &kp DE_PRCNT        &kp DE_AT      &none               &kp DE_SEMI          &kp DE_COLON   &kp DE_UNDER   &kp DE_TILDE
+                                                    &trans        &trans         &none               &trans         &trans              &none
                         >;
                 };
 
@@ -67,10 +67,10 @@
 // |      |     |     |     |     |     |   |     |SELWB|SELWF|     |     |     |
 //                    |     | BCK | NAV |   | ENT | SPC |     |
                         bindings = <
-   &none     &none   &none           &none           &none                    &none                     &kp PG_UP      &kp HOME          &kp UP              &kp END         &none           &none
-   &none     &none   &hm LGUI LC(A)  &hm LALT LC(E)  &hm LSHIFT LC(LS(LEFT))  &hm LCTRL LC(LS(RIGHT))   &kp PG_DN      &hm LCTRL LEFT    &hm LSHIFT DOWN     &hm LALT RIGHT  &hm LGUI LC(Z)  &kp LC(Y)
-   &none     &none   &none           &none           &none                    &none                     &none          &kp LA(LS(LEFT))  &kp LA(LS(RIGHT))   &none           &none           &none
-                                     &none           &kp BSPC                 &trans                    &trans         &trans            &none
+   &none     &none   &none           &none           &none                    &none                          &kp PG_UP      &kp HOME          &kp UP              &kp END         &none           &none
+   &none     &none   &hm LGUI LC(A)  &hm LALT LC(E)  &hm LSHIFT LC(LS(LEFT))  &hm LCTRL LC(LS(RIGHT))        &kp PG_DN      &hm LCTRL LEFT    &hm LSHIFT DOWN     &hm LALT RIGHT  &hm LGUI LC(Z)  &kp LC(Y)
+   &none     &none   &none           &none           &none                    &none                          &none          &kp LA(LS(LEFT))  &kp LA(LS(RIGHT))   &none           &none           &none
+                                     &none           &kp BSPC                 &trans                         &trans         &trans            &none
                         >;
                 };
 
@@ -82,10 +82,10 @@
 // |   -  |  6  |  7  |  8  |  9  |  0  |   |  /  |MUTE |     |     |     |     
 //                    |     | BCK |     |   | ENT | SPC | NUM |
                         bindings = <
-   &kp F1    &kp F2  &kp F3   &kp F4  &kp F5            &kp F6                 &kp F7    &kp F8            &kp F9           &kp F10      &kp F11    &kp F12
-   &kp PLUS  &kp N1  &kp N2   &kp N3  &kp N4            &kp N5                 &kp STAR  &kp C_PLAY_PAUSE  &kp C_VOL_DN     &kp C_VOL_UP &kp C_PREV &kp C_NEXT
-   &kp MINUS &kp N6  &kp N7   &kp N8  &kp N9            &kp N0                 &kp FSLH  &kp C_MUTE        &none            &none        &none      &none
-                              &none   &kp BSPC          &none                  &trans    &trans            &trans
+   &kp F1         &kp F2      &kp F3      &kp F4      &kp F5      &kp F6           &kp F7        &kp F8             &kp F9         &kp F10        &kp F11      &kp F12
+   &kp DE_PLUS    &kp DE_N1   &kp DE_N2   &kp DE_N3   &kp DE_N4   &kp DE_N5        &kp DE_STAR   &kp C_PLAY_PAUSE   &kp C_VOL_DN   &kp C_VOL_UP   &kp C_PREV   &kp C_NEXT
+   &kp DE_MINUS   &kp DE_N6   &kp DE_N7   &kp DE_N8   &kp DE_N9   &kp DE_N0        &kp DE_FSLH   &kp C_MUTE         &none          &none          &none        &none
+                                          &none       &kp BSPC    &none            &trans        &trans             &trans
                         >;
                 };
         };
