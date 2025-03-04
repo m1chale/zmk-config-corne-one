@@ -28,7 +28,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                base {
+                default_layer {
                     display-name = "Base";
 // -------------------------------------------------------------------------------
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Z  |  U   |  I  |  O  |  P  |  Ü  |
