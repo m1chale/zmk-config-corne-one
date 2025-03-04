@@ -20,8 +20,8 @@
 // |      |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  | DEL |
 //                    | SYM | BCK | NAV |   | ENT | SPC  | NUM |
                         bindings = <
-   &kp ESC   &kp Q    &kp W    &kp E    &kp R        &kp T           &kp Z   &kp U       &kp I       &kp O      &kp P            &kp LC(LS(U))
-   &kp TAB   &hm LG A &hm LA S &hm LS D &hm LC F     &kp G           &kp H   &hm LC J    &hm LS K    &hm LA L   &hm LG LC(LS(O)) &kp LC(LS(A))
+   &kp ESC   &kp Q    &kp W    &kp E    &kp R        &kp T           &kp Z   &kp U       &kp I       &kp O      &kp P            &kp LC LS U
+   &kp TAB   &hm LG A &hm LA S &hm LS D &hm LC F     &kp G           &kp H   &hm LC J    &hm LS K    &hm LA L   &hm LG LC(LS(O)) &kp LC LS A
    &none     &kp Y    &kp X    &kp C    &kp V        &kp B           &kp N   &kp M       &kp COMMA   &kp DOT    &kp MINUS        &kp DEL
                                &mo sym  &kp BSPC     &mo nav         &kp RET &kp SPACE   &mo num
                         >;
@@ -36,7 +36,7 @@
 //                    | SYM | BCK |     |   | ENT | SPC |     |
                         bindings = <
    &kp CARET  &text "€"  &kp HASH      &kp LBKT    &kp RBKT   &kp EXCL       &kp QMARK   &kp LEFT_BRACE   &kp RIGHT_BRACE   &kp STAR  &kp FSLH    &kp BSLH
-   &none      &none      &kp GRAVE  &kp SQT     &kp EQUAL  &kp AMPS       &kp DQT     &kp LPAR         &kp RPAR          &kp PLUS  &kp PIPE    &none
+   &none      &none      &kp GRAVE     &kp SQT     &kp EQUAL  &kp AMPS       &kp DQT     &kp LPAR         &kp RPAR          &kp PLUS  &kp PIPE    &none
    &text "§"  &kp dollar &kp LT        &kp GT      &none      &kp PRCNT      &kp AT      &none            &kp SEMI          &kp COLON &kp UNDER   &kp TILDE
                                        &trans      &trans     &none          &trans      &trans           &none
                         >;
