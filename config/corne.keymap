@@ -34,13 +34,13 @@
                     display-name = "Base";
 // -------------------------------------------------------------------------------
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Z  |  U   |  I  |  O  |  P  |  Ü  |
-// | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ö  |  Ä  |
-// |      |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  | DEL |
+// | DEL  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ö  |  Ä  |
+// |      |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  | TAB |
 //                    | SYM | BCK | NAV |   | ENT | SPC  | NUM |
                         bindings = <
    &kp ESC   &kp DE_Q        &kp DE_W        &kp DE_E          &kp DE_R         &kp DE_T             &kp DE_Z   &kp DE_U         &kp DE_I          &kp DE_O        &kp DE_P               &kp DE_U_UMLAUT
-   &kp TAB   &hm LGUI DE_A   &hm LALT DE_S   &hm LSHIFT DE_D   &hm LCTRL DE_F   &kp DE_G             &kp DE_H   &hm LCTRL DE_J   &hm LSHIFT DE_K   &hm LALT DE_L   &hm LGUI DE_O_UMLAUT   &kp DE_A_UMLAUT
-   &none     &kp DE_Y        &kp DE_X        &kp DE_C          &kp DE_V         &kp DE_B             &kp DE_N   &kp DE_M         &kp DE_COMMA      &kp DE_DOT      &kp DE_MINUS           &kp DEL
+   &kp DEL   &hm LGUI DE_A   &hm LALT DE_S   &hm LSHIFT DE_D   &hm LCTRL DE_F   &kp DE_G             &kp DE_H   &hm LCTRL DE_J   &hm LSHIFT DE_K   &hm LALT DE_L   &hm LGUI DE_O_UMLAUT   &kp DE_A_UMLAUT
+   &none     &kp DE_Y        &kp DE_X        &kp DE_C          &kp DE_V         &kp DE_B             &kp DE_N   &kp DE_M         &kp DE_COMMA      &kp DE_DOT      &kp DE_MINUS           &kp TAB
                                              &mo SYM_LAYER     &kp BSPC         &mo NAV_LAYER        &kp RET    &kp SPACE        &mo NUM_LAYER
                         >;
                 };
@@ -48,15 +48,15 @@
 
                 sym {
 // -------------------------------------------------------------------------------
-// |   ß  |  €  |  #  |  [  |  ]  |  !  |   |  ?  |  {  |  }  |  *  |  /  |   \  |
-// |   ^  |  $  |  `  |  '  |  =  |  &  |   |  "  |  (  |  )  |  +  | "|" |      |
-// |   °  |  §  |  <  |  >  |     |  %  |   |  @  |     |  ;  |  :  |  _  |   ~  |
+// |   ß  |  €  |  #  |  '  |     |     |   |  ?  |  {  |  }  |  *  |  /  |   \  |
+// |   ^  |  <  |  >  |  [  |  ]  |  &  |   |  "  |  (  |  )  |  +  | "|" |   @  |
+// |   °  |  §  |  $  |  `  |     |  %  |   |  !  |  =  |  ;  |  :  |  _  |   ~  |
 //                    | SYM | BCK |     |   | ENT | SPC |     |
                         bindings = <
-   &kp DE_SHARP_S    &kp DE_EURO     &kp DE_HASH    &kp LA(DE_N5)   &kp LA(DE_N6)   &kp DE_EXCL         &kp DE_QMARK   &kp LA(DE_N8)   &kp LA(DE_N9)   &kp DE_STAR    &kp DE_FSLH     &kp LS(LA(DE_N7))
-   &kp DE_CARET      &kp DE_DOLLAR   &kp DE_GRAVE   &kp DE_SQT      &kp DE_EQUAL    &kp DE_AMPS         &kp DE_DQT     &kp DE_LPAR     &kp DE_RPAR     &kp DE_PLUS    &kp LA(DE_N7)   &none
-   &kp DE_DEG        &kp DE_SECT     &kp DE_LT      &kp DE_GT       &none           &kp DE_PRCNT        &kp LA(DE_L)   &none           &kp DE_SEMI     &kp DE_COLON   &kp DE_UNDER    &kp LA(DE_N)
-                                                    &trans          &trans          &none               &trans         &trans          &none
+   &kp DE_SHARP_S    &kp DE_EURO   &kp DE_HASH     &kp DE_SQT      &none           &none               &kp DE_QMARK   &kp LA(DE_N8)   &kp LA(DE_N9)   &kp DE_STAR    &kp DE_FSLH     &kp LS(LA(DE_N7))
+   &kp DE_CARET      &kp DE_LT     &kp DE_GT       &kp LA(DE_N5)   &kp LA(DE_N6)   &kp DE_AMPS         &kp DE_DQT     &kp DE_LPAR     &kp DE_RPAR     &kp DE_PLUS    &kp LA(DE_N7)   &kp LA(DE_L)
+   &kp DE_DEG        &kp DE_SECT   &kp DE_DOLLAR   &kp DE_GRAVE    &none           &kp DE_PRCNT        &kp DE_EXCL    &kp DE_EQUAL    &kp DE_SEMI     &kp DE_COLON   &kp DE_UNDER    &kp LA(DE_N)
+                                                   &trans          &trans          &none               &trans         &trans          &none
                         >;
                 };
 
