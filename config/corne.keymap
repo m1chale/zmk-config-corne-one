@@ -39,7 +39,7 @@
 //                    | SYM | BCK | NAV |   | ENT | SPC  | NUM |
                         bindings = <
    &kp ESC   &kp DE_Q        &kp DE_W        &kp DE_E          &kp DE_R         &kp DE_T             &kp DE_Z   &kp DE_U         &kp DE_I          &kp DE_O        &kp DE_P               &kp DE_U_UMLAUT
-   &kp DEL   &hm LGUI DE_A   &hm LALT DE_S   &hm LSHIFT DE_D   &hm LCTRL DE_F   &kp DE_G             &kp DE_H   &hm LCTRL DE_J   &hm LSHIFT DE_K   &hm LALT DE_L   &hm LGUI DE_O_UMLAUT   &kp DE_A_UMLAUT
+   &kp DEL   &hm LGUI DE_A   &hm LALT DE_S   &hm LSHIFT DE_D   &hm LCTRL DE_F   &kp DE_G             &kp DE_H   &hm RCTRL DE_J   &hm RSHIFT DE_K   &hm RALT DE_L   &hm RGUI DE_O_UMLAUT   &kp DE_A_UMLAUT
    &none     &kp DE_Y        &kp DE_X        &kp DE_C          &kp DE_V         &kp DE_B             &kp DE_N   &kp DE_M         &kp DE_COMMA      &kp DE_DOT      &kp DE_MINUS           &kp TAB
                                              &mo SYM_LAYER     &kp BSPC         &mo NAV_LAYER        &kp RET    &kp SPACE        &mo NUM_LAYER
                         >;
@@ -62,15 +62,15 @@
 
                 nav {
 // ------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |PG UP| HOME| / \ | END |     |     |
-// |      |     |CTRLA|CTRLE| SELL| SELR|   |PG DW|  <- |  v  | ->  |CTRLZ|CTRLF|
-// |      |     |     |     |     |     |   |     |SELWB|SELWF|     |     |     |
+// |      |     |     |     |     |     |   |PG UP| HOME| END | APP |     |     |
+// |      | GUI | ALT |SHIFT|CTRL |     |   |PG DW|  <- |  v  | / \ | ->  |     |
+// |      |     |     |     |     |     |   |     |     |     |     |     |     |
 //                    |     | BCK | NAV |   | ENT | SPC |     |
                         bindings = <
-   &none     &none   &none           &none           &none                    &none                          &kp PG_UP      &kp HOME          &kp UP              &kp END         &none           &none
-   &none     &none   &hm LGUI LC(A)  &hm LALT LC(E)  &hm LSHIFT LC(LS(LEFT))  &hm LCTRL LC(LS(RIGHT))        &kp PG_DN      &hm LCTRL LEFT    &hm LSHIFT DOWN     &hm LALT RIGHT  &hm LGUI LC(Z)  &kp LC(Y)
-   &none     &none   &none           &none           &none                    &none                          &none          &kp LA(LS(LEFT))  &kp LA(LS(RIGHT))   &none           &none           &none
-                                     &none           &kp BSPC                 &trans                         &trans         &trans            &none
+   &none   &none      &none      &none        &none       &none        &kp PG_UP   &kp HOME   &kp END    &kp K_APP   &none       &none
+   &none   &kp LGUI   &kp LALT   &kp LSHIFT   &kp LCTRL   &none        &kp PG_DN   &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT   &none
+   &none   &none      &none      &none        &none       &none        &none       &none      &none      &none       &none       &none
+                                 &none        &kp BSPC    &trans       &trans      &trans     &none
                         >;
                 };
 
@@ -78,13 +78,13 @@
                 num {
 // ------------------------------------------------------------------------------
 // |  F1  |  F2 |  F3 |  F4 |  F5 |  F6 |   |  F7 |  F8 |  F9 | F10 | F11 | F12 |
-// |   +  |  1  |  2  |  3  |  4  |  5  |   |  *  |PLAY |Vol D|Vol U|PrevS|NextS|
-// |   -  |  6  |  7  |  8  |  9  |  0  |   |  /  |MUTE |     |     |     |     
+// |   +  |  1  |  2  |  3  |  4  |  5  |   |  *  |  0  |Vol D|Vol U|PrevS|NextS|
+// |   -  |  6  |  7  |  8  |  9  |     |   |  /  |PLAY |MUTE |     |     |     |
 //                    |     | BCK |     |   | ENT | SPC | NUM |
                         bindings = <
    &kp F1         &kp F2      &kp F3      &kp F4      &kp F5      &kp F6           &kp F7        &kp F8             &kp F9         &kp F10        &kp F11      &kp F12
-   &kp DE_PLUS    &kp DE_N1   &kp DE_N2   &kp DE_N3   &kp DE_N4   &kp DE_N5        &kp DE_STAR   &kp C_PLAY_PAUSE   &kp C_VOL_DN   &kp C_VOL_UP   &kp C_PREV   &kp C_NEXT
-   &kp DE_MINUS   &kp DE_N6   &kp DE_N7   &kp DE_N8   &kp DE_N9   &kp DE_N0        &kp DE_FSLH   &kp C_MUTE         &none          &none          &none        &none
+   &kp DE_PLUS    &kp DE_N1   &kp DE_N2   &kp DE_N3   &kp DE_N4   &kp DE_N5        &kp DE_STAR   &kp DE_N0          &kp C_VOL_DN   &kp C_VOL_UP   &kp C_PREV   &kp C_NEXT
+   &kp DE_MINUS   &kp DE_N6   &kp DE_N7   &kp DE_N8   &kp DE_N9   &none            &kp DE_FSLH   &kp C_PLAY_PAUSE   &kp C_MUTE     &none          &none        &none
                                           &none       &kp BSPC    &none            &trans        &trans             &trans
                         >;
                 };
