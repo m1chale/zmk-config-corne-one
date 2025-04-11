@@ -38,10 +38,10 @@
 // |      |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  | TAB |
 //                    | SYM | BCK | NAV |   | ENT | SPC  | NUM |
                         bindings = <
-   &kp ESC   &kp DE_Q        &kp DE_W        &kp DE_E          &kp DE_R         &kp DE_T             &kp DE_Z   &kp DE_U         &kp DE_I          &kp DE_O        &kp DE_P               &kp DE_U_UMLAUT
-   &kp DEL   &hm LGUI DE_A   &hm LALT DE_S   &hm LSHIFT DE_D   &hm LCTRL DE_F   &kp DE_G             &kp DE_H   &hm RCTRL DE_J   &hm RSHIFT DE_K   &hm RALT DE_L   &hm RGUI DE_O_UMLAUT   &kp DE_A_UMLAUT
-   &none     &kp DE_Y        &kp DE_X        &kp DE_C          &kp DE_V         &kp DE_B             &kp DE_N   &kp DE_M         &kp DE_COMMA      &kp DE_DOT      &kp DE_MINUS           &kp TAB
-                                             &mo SYM_LAYER     &kp BSPC         &mo NAV_LAYER        &kp RET    &kp SPACE        &mo NUM_LAYER
+   &kp ESC   &kp DE_Q         &kp DE_W        &kp DE_E          &kp DE_R        &kp DE_T             &kp DE_Z   &kp DE_U        &kp DE_I          &kp DE_O        &kp DE_P                &kp DE_U_UMLAUT
+   &kp DEL   &hm LCTRL DE_A   &hm LALT DE_S   &hm LSHIFT DE_D   &hm LGUI DE_F   &kp DE_G             &kp DE_H   &hm RGUI DE_J   &hm RSHIFT DE_K   &hm RALT DE_L   &hm RCTRL DE_O_UMLAUT   &kp DE_A_UMLAUT
+   &none     &kp DE_Y         &kp DE_X        &kp DE_C          &kp DE_V        &kp DE_B             &kp DE_N   &kp DE_M        &kp DE_COMMA      &kp DE_DOT      &kp DE_MINUS             &kp TAB
+                                              &mo SYM_LAYER     &kp BSPC        &mo NAV_LAYER        &kp RET    &kp SPACE       &mo NUM_LAYER
                         >;
                 };
 
@@ -67,10 +67,10 @@
 // |      |     |     |     |     |     |   |     |     |     |     |     |     |
 //                    |     | BCK | NAV |   | ENT | SPC |     |
                         bindings = <
-   &none   &none      &none      &none        &none       &none        &kp PG_UP   &kp HOME   &kp END    &kp K_APP   &none       &none
-   &none   &kp LGUI   &kp LALT   &kp LSHIFT   &kp LCTRL   &none        &kp PG_DN   &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT   &none
-   &none   &none      &none      &none        &none       &none        &none       &none      &none      &none       &none       &none
-                                 &none        &kp BSPC    &trans       &trans      &trans     &none
+   &none   &none       &none      &none        &none      &none        &kp PG_UP   &kp HOME   &kp END    &kp K_APP   &none       &none
+   &none   &kp LCTRL   &kp LALT   &kp LSHIFT   &kp LGUI   &none        &kp PG_DN   &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT   &none
+   &none   &none       &none      &none        &none      &none        &none       &none      &none      &none       &none       &none
+                                  &none        &kp BSPC   &trans       &trans      &trans     &none
                         >;
                 };
 
