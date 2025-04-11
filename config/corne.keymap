@@ -63,29 +63,29 @@
                 nav {
 // ------------------------------------------------------------------------------
 // |      |     |     |     |     |     |   |PG UP| HOME| END | APP |     |     |
-// |      | GUI | ALT |SHIFT|CTRL |     |   |PG DW|  <- |  v  | / \ | ->  |     |
+// |      |LCTRL| ALT |SHIFT| GUI |     |   |PG DW|  <- |  v  | / \ | ->  |     |
 // |      |     |     |     |     |     |   |     |     |     |     |     |     |
 //                    |     | BCK | NAV |   | ENT | SPC |     |
                         bindings = <
-   &none   &none       &none      &none        &none      &none        &kp PG_UP   &kp HOME   &kp END    &kp K_APP   &none       &none
-   &none   &kp LCTRL   &kp LALT   &kp LSHIFT   &kp LGUI   &none        &kp PG_DN   &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT   &none
-   &none   &none       &none      &none        &none      &none        &none       &none      &none      &none       &none       &none
-                                  &none        &kp BSPC   &trans       &trans      &trans     &none
+   &none   &none       &none      &none        &none      &none         &kp PG_UP   &kp HOME   &kp END    &kp K_APP   &none       &none
+   &none   &kp LCTRL   &kp LALT   &kp LSHIFT   &kp LGUI   &none         &kp PG_DN   &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT   &none
+   &none   &none       &none      &none        &none      &none         &none       &none      &none      &none       &none       &none
+                                  &none        &kp BSPC   &trans        &trans      &trans     &none
                         >;
                 };
 
 
                 num {
 // ------------------------------------------------------------------------------
-// |  F1  |  F2 |  F3 |  F4 |  F5 |  F6 |   |  F7 |  F8 |  F9 | F10 | F11 | F12 |
-// |   +  |  1  |  2  |  3  |  4  |  5  |   |  *  |  0  |Vol D|Vol U|PrevS|NextS|
-// |   -  |  6  |  7  |  8  |  9  |     |   |  /  |PLAY |MUTE |     |     |     |
+// |  F1  |  F4 |  1  |  2  |  3  |  +  |   |  F7 |  F8 |  F9 | F10 | F11 | F12 |
+// |  F2  |  F5 |  4  |  5  |  6  |  0  |   |  *  |PLAY |Vol D|Vol U|PrevS|NextS|
+// |  F3  |  F6 |  7  |  8  |  9  |  -  |   |  /  |MUTE |     |     |     |     |
 //                    |     | BCK |     |   | ENT | SPC | NUM |
                         bindings = <
-   &kp F1         &kp F2      &kp F3      &kp F4      &kp F5      &kp F6           &kp F7        &kp F8             &kp F9         &kp F10        &kp F11      &kp F12
-   &kp DE_PLUS    &kp DE_N1   &kp DE_N2   &kp DE_N3   &kp DE_N4   &kp DE_N5        &kp DE_STAR   &kp DE_N0          &kp C_VOL_DN   &kp C_VOL_UP   &kp C_PREV   &kp C_NEXT
-   &kp DE_MINUS   &kp DE_N6   &kp DE_N7   &kp DE_N8   &kp DE_N9   &none            &kp DE_FSLH   &kp C_PLAY_PAUSE   &kp C_MUTE     &none          &none        &none
-                                          &none       &kp BSPC    &none            &trans        &trans             &trans
+   &kp F1   &kp F4   &kp DE_N1   &kp DE_N2   &kp DE_N3   &kp DE_PLUS         &kp F7        &kp F8             &kp F9         &kp F10        &kp F11      &kp F12
+   &kp F2   &kp F5   &kp DE_N4   &kp DE_N5   &kp DE_N6   &kp DE_N0           &kp DE_STAR   &kp C_PLAY_PAUSE   &kp C_VOL_DN   &kp C_VOL_UP   &kp C_PREV   &kp C_NEXT
+   &kp F3   &kp F6   &kp DE_N7   &kp DE_N8   &kp DE_N9   &kp DE_MINUS        &kp DE_FSLH   &kp C_MUTE         &none          &none          &none        &none
+                                 &none       &kp BSPC    &none               &trans        &trans             &trans
                         >;
                 };
         };
