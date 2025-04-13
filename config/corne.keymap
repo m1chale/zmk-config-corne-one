@@ -67,10 +67,10 @@
 // |      |     |     |     |     |     |   |     |     |     |     |     |     |
 //                    |     | BCK | NAV |   | ENT | SPC |     |
                         bindings = <
-   &none   &none       &kp LG(DE_X)   &kp LG(DE_C)   &LG(DE_V)   &none         &kp PG_UP   &kp HOME   &kp END    &kp K_APP   &none       &none
-   &none   &kp LCTRL   &kp LALT       &kp LSHIFT     &kp LGUI    &none         &kp PG_DN   &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT   &none
-   &none   &none       &none          &none          &none       &none         &none       &none      &none      &none       &none       &none
-                                      &none          &kp BSPC    &trans        &trans      &trans     &none
+   &none   &none       &kp LG(DE_X)   &kp LG(DE_C)   &kp LG(DE_V)   &none         &kp PG_UP   &kp HOME   &kp END    &kp K_APP   &none       &none
+   &none   &kp LCTRL   &kp LALT       &kp LSHIFT     &kp LGUI       &none         &kp PG_DN   &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT   &none
+   &none   &none       &none          &none          &none          &none         &none       &none      &none      &none       &none       &none
+                                      &none          &kp BSPC       &trans        &trans      &trans     &none
                         >;
                 };
 
